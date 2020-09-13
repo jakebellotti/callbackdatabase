@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link data-from-github="true" rel="stylesheet" href="index.css">
-    <link data-from-github="true" rel="stylesheet" href="recordVisit.css">
-    <link data-from-github="true" rel="stylesheet" href="scheduledCalls.css">
+    <link data-from-github="true" rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase@master/index.css">
+    <link data-from-github="true" rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase@master/recordVisit.css">
+    <link data-from-github="true" rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase@master/scheduledCalls.css">
 
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
@@ -115,21 +118,26 @@
 
 <script>
 
+    /*
+    * TODO default to github, change to local/relative
+    * */
     /*TODO clean up and do not do unless we are live*/
+    function replaceCssWithLocal() {
+        let proxyPrefix = "https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase@master/";
+        let css = document.getElementsByTagName("link");
+        for (let i = 0; i < css.length; i++) {
+            var github = css[i].getAttribute("data-from-github");
+            if (github != null) {
+                //    TODO change
+                let name = css[i].href;
+                let localRelativeName = name.replace(proxyPrefix, "");
 
-    let githubAppend = "https://raw.githubusercontent.com/jakebellotti/callbackdatabase/master";
-    let css = document.getElementsByTagName("link");
-    for (let i = 0; i < css.length; i++) {
-        var github = css[i].getAttribute("data-from-github");
-        if (github != null) {
-            //    TODO change
-            let name = css[i].href;
-            let split = name.split("/");
-            let originalName = split[split.length -1];
-            let newName = (githubAppend + "/" + originalName);
-            css[i].href = newName;
+                console.log(localRelativeName);
+            }
         }
     }
+
+    
 
 </script>
 </body>
