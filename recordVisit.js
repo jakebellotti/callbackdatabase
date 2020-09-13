@@ -16,7 +16,7 @@ function selectCustomerButtonClicked() {
 
 function clearButtonClicked() {
 //    TODO clear
-    alert("he;llo");
+    alert("good bye");
 }
 
 function callBackDaysChanged(e) {
