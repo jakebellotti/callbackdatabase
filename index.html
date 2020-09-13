@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link data-from-github="true" rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase/index.css">
+          href="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase@latest/index.css">
     <link data-from-github="true" rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase/recordVisit.css">
+          href="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase@latest/recordVisit.css">
     <link data-from-github="true" rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase/scheduledCalls.css">
+          href="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase@latest/scheduledCalls.css">
 
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
 
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
-    <script data-from-github="true" src="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase/main.js"></script>
-    <script data-from-github="true" src="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase/scheduledCalls.js"
+    <script data-from-github="true" src="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase@latest/main.js"></script>
+    <script data-from-github="true" src="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase@latest/scheduledCalls.js"
             defer></script>
-    <script data-from-github="true" src="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase/recordVisit.js"
+    <script data-from-github="true" src="https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase@latest/recordVisit.js"
             defer></script>
 </head>
 <body>
@@ -126,7 +126,7 @@
     * */
     /*TODO clean up and do not do unless we are live*/
     function replaceCssWithLocal() {
-        let proxyPrefix = "https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase/";
+        let proxyPrefix = "https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase@latest/";
         let css = document.getElementsByTagName("link");
         for (let i = 0; i < css.length; i++) {
             var github = css[i].getAttribute("data-from-github");
@@ -142,7 +142,7 @@
     function replaceJSWithLocal() {
         //TODO will need to remove and then re add
 
-        let proxyPrefix = "https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase/";
+        let proxyPrefix = "https://cdn.jsdelivr.net/gh/jakebellotti/callbackdatabase@latest/";
         let css = document.getElementsByTagName("script");
 
         let head = document.querySelector("head");
