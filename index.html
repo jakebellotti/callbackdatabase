@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="recordVisit.css">
+    <link rel="stylesheet" href="scheduledCalls.css">
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <script src="main.js"></script>
+    <script src="scheduledCalls.js" defer></script>
+    <script src="recordVisit.js" defer></script>
+</head>
+<body>
+
+<div id="header">
+    <button id="logout-button" class="mdc-button mdc-button--raised">
+        <span class="mdc-button__label">Logout</span>
+    </button>
+    <p>Logged in as Jake</p>
+</div>
+
+<div id="cards-wrapper">
+    <div class="record-visit">
+        <p class="record-visit-header">Record Visit</p>
+        <div class="selected-customer-table-wrapper">
+            <table class="selected-customer-table">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Date of Birth</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr id="selected-customer-row">
+                    <td colspan="4">No customer selected.</td>
+                </tr>
+            </table>
+            <button id="select-customer-button" onclick="selectCustomerButtonClicked();"
+                    class="mdc-button mdc-button--raised">
+                <span class="mdc-button__label">Select/Add Customer</span>
+            </button>
+        </div>
+        <div class="callback-days-div">
+            <p>Call back in:</p>
+            <select class="custom-select" id="callbacks-days-select">
+                <option value="30">30 Days</option>
+                <option value="60">60 Days</option>
+            </select>
+            <p>On: </p>
+            <p id="callback-date-input">01/01/2000</p>
+
+        </div>
+
+        <div class="location-select-div">
+            <p>Location: </p>
+            <select class="custom-select">
+                <option>GC</option>
+                <option>LOU</option>
+            </select>
+        </div>
+        <p id="visit-details-label">Visit Details:</p>
+        <textarea id="visit-details-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</textarea>
+
+        <div id="record-visit-buttons-div">
+            <button class="mdc-button mdc-button--raised">
+                <span class="mdc-button__label">Save Entry</span>
+            </button>
+            <button id="record-visit-clear-button" onclick="clearButtonClicked()" class="mdc-button mdc-button--raised">
+                <span class="mdc-button__label">Clear</span>
+            </button>
+        </div>
+    </div>
+
+    <!--    Scheduled calls-->
+
+    <div class="scheduled-calls-div">
+        <div class="scheduled-call-header">
+            <p>Scheduled Calls</p>
+            <div class="calls-due">
+                <p>11/9/2020</p>
+            </div>
+            <button id="tomorrow-button" onclick="tomorrowButtonClicked()" class="mdc-button mdc-button--outlined">
+                <span class="mdc-button__label">Tomorrow</span>
+            </button>
+
+            <button id="today-button" onclick="todayButtonClicked()" class="mdc-button mdc-button--raised">
+                <span class="mdc-button__label">Today</span>
+            </button>
+            <button id="yesterday-button" onclick="yesterdayButtonClicked()" class="mdc-button mdc-button--outlined">
+                <span class="mdc-button__label">Yesterday</span>
+            </button>
+        </div>
+
+        <div class="scheduled-calls-table-wrapper">
+            <table id="scheduled-calls-table">
+                <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Phone #</th>
+                    <th>Location</th>
+                    <th>Called</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

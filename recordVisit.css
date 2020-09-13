@@ -1,0 +1,151 @@
+.record-visit {
+    border-radius: 5px;
+    width: 500px;
+    height: 500px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.9);
+    margin-right: 10px;
+}
+
+.record-visit-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: "Roboto";
+    padding: 5px;
+    font-weight: bold;
+    font-size: 26px;
+    background-color: var(--blue-header-color);
+    text-align: center;
+    color: var(--white-color);
+}
+
+.callback-days-div {
+    color: white;
+    font-family: "Roboto Light";
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.callback-days-div p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.custom-select {
+    font-family: "Roboto";
+    border: none;
+    background-color: var(--input-color);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+#callbacks-days-select {
+
+}
+
+#callback-date-input {
+    font-family: "Roboto";
+    text-align: center;
+    background-color: var(--input-color);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.callback-days-div * {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.location-select-div {
+    color: white;
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.location-select-div * {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.location-select-div p {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Roboto Light";
+}
+
+.location-select-div select {
+    font-family: "Roboto";
+}
+
+.selected-customer-table {
+    color: white;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Roboto Light";
+    text-align: center;
+}
+
+.selected-customer-table th {
+    background-color: var(--input-color);
+    font-weight: normal;
+}
+
+.selected-customer-table td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.selected-customer-table-wrapper {
+    padding: 10px;
+    /*margin: auto;*/
+    display: block;
+    text-align: center;
+}
+
+#select-customer-button {
+    padding: 5px;
+    margin-top: 5px;
+    font-family: "Roboto";
+    margin-top: 5px !important;
+}
+
+#visit-details-label {
+    color: white;
+    text-align: center;
+    font-family: "Roboto Light";
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+#visit-details-info {
+    height: 100%;
+    font-family: "Roboto Light";
+    font-size: 16px;
+    color: white;
+    background-color: var(--input-color);
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+}
+
+#record-visit-buttons-div {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+#record-visit-buttons-div * {
+    margin: 5px;
+}
+
+#record-visit-clear-button {
+    background-color: #bb0f2d;
+}

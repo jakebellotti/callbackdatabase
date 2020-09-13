@@ -1,0 +1,84 @@
+.scheduled-calls-div {
+    font-family: "Roboto Light";
+    color: var(--white-color);
+    border-radius: 5px;
+    width: 500px;
+    height: 500px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.9);
+
+    margin-left: 5px;
+}
+
+.scheduled-call-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: "Roboto";
+    padding: 5px;
+    font-weight: bold;
+    font-size: 26px;
+    background-color: var(--blue-header-color);
+    text-align: center;
+    color: var(--white-color);
+}
+
+.scheduled-call-time-period-div {
+   display: flex;
+    justify-content: center;
+}
+
+.scheduled-call-time-period-div button {
+    margin: 3px;
+    padding: 3px;
+}
+
+.scheduled-call-selected-time-period {
+    background-color: yellowgreen;
+    /*color: white;*/
+}
+
+.calls-due {
+    font-family: "Roboto Light";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.calls-due-text {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.scheduled-calls-table-wrapper {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+    text-align: center;
+    display: flex;
+}
+
+.scheduled-calls-table-wrapper th {
+    background-color: var(--input-color);
+    font-weight: normal;
+}
+
+.scheduled-calls-table-wrapper td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.scheduled-calls-table-wrapper table {
+    width: 100%;
+    background-color: white;
+}
+
+.scheduled-calls-table-wrapper table tbody {
+    color: black;
+}

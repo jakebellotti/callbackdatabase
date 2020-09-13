@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue-header-color: rgb(58, 145, 229);
+    --background-color: rgb(15, 20, 40);
+    --input-color: rgb(65, 71, 85);
+    --white-color: rgb(253, 250, 255);
+}
+
+body {
+    background-color: rgba(0,0,0,0.8);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("font/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url("font/Roboto-Light.ttf");
+}
+
+#cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#header {
+    font-family: "Roboto Light";
+    padding: 10px;
+    background-color: var(--input-color);
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.9);
+}
+#header p {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
