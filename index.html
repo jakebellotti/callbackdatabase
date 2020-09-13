@@ -152,7 +152,9 @@
 
     // http://localhost:63342/
     //    TODO if localhost file can be resolved, we should change back to normal
+    console.log(location.hostname);
     if (location.hostname === "localhost") {
+        console.log("Making everything local");
         replaceCssWithLocal();
         replaceJSWithLocal();
     }
